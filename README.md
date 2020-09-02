@@ -28,7 +28,7 @@ pip install -r requirements.txt
  
 ## Usage
  
-## スクレイピング
+### スクレイピング
  
 ```bash
 git clone https://github.com/hoge/~
@@ -47,7 +47,7 @@ def main():
 
 実行結果として、dataディレクトリ内に出版日毎に掲載順のファイルが保存される。
 
-## イロレーティング
+### イロレーティング
 
 ```bash
 python main.py
