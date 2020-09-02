@@ -21,7 +21,7 @@
 ## Installation
  
 ```bash
-pip install huga_package
+pip install -r requirements.txt
 ```
  
 ## Usage
@@ -35,11 +35,23 @@ mkdir data
 python get_data.py
 ```
 
+main関数内のmax_pageを好きな値に変更することで、取得するデータの数を選べます。
+
+```main.py
+def main():
+
+    max_pages = 20　#好きな値に変更
+```
+
+実行結果として、dataディレクトリ内に出版日毎に掲載順のファイルが保存される。
+
 ## イロレーティング
 
 ```bash
 python main.py
 ```
+
+実行結果として、画面内にタイトル毎の順位、レート、名前が出力される。
  
 ## Note
  

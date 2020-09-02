@@ -4,11 +4,14 @@ import csv
 import time
 
 def main():
+
+    max_pages = 20
+
     url = 'https://jumpranking.blog.fc2.com/page.html'
     get_data(url)
     time.sleep(5)
     
-    for i in range(1, 20):
+    for i in range(1, max_pages):
         url = 'https://jumpranking.blog.fc2.com/page-{}.html'.format(i)
         get_data(url)
         time.sleep(5)
