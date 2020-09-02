@@ -7,14 +7,13 @@ def main():
 
     max_pages = 20
 
-    url = 'https://jumpranking.blog.fc2.com/page.html'
-    get_data(url)
-    time.sleep(5)
-    
-    for i in range(1, max_pages):
-        url = 'https://jumpranking.blog.fc2.com/page-{}.html'.format(i)
+    for i in range(max_pages):
+        if i == 0:
+            url = 'https://jumpranking.blog.fc2.com/page.html'
+        else:
+            url = 'https://jumpranking.blog.fc2.com/page-{}.html'.format(i)
         get_data(url)
-        time.sleep(5)
+        time.sleep(10)
 
 def get_data(url):
     result = requests.get(url)
