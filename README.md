@@ -6,6 +6,8 @@
 ## DEMO
  
 ### 出力結果
+
+<img src="assets/result_rating.png" />
  
 ## Requirement
  
